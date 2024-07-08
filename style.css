@@ -1,0 +1,176 @@
+body {
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-image: url('/public/BetVIP_Desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-left: 12.5rem;
+    margin-top: 6.5rem;
+
+    .title-container {
+
+        .title{
+            font-size: 5rem;
+            text-transform: uppercase;
+            color: yellow;
+        }
+    }
+
+    .game-container{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        .shields{
+            width: 23rem;
+        }
+
+        .teams{
+            font-size: 3rem;
+            line-height: 3rem;
+            text-transform: uppercase;
+            font-weight: normal;
+
+            margin-left: 0.5rem;
+
+            span {
+                color: yellow;
+            }
+
+            .game-date{
+                font-size: 1.4rem;
+                line-height: 1rem;
+                font-family: "Montserrat", sans-serif;
+            }
+
+        }
+    }
+
+    .odd-containers{
+        width: 27vw;
+        display: flex;
+
+        flex-direction: rows;
+        justify-content: space-around;
+
+        margin-top: 1.2rem;
+        font-size: 4rem;
+    }
+
+    .send-button{
+        width: 20vw;
+        text-transform: uppercase;
+        margin: 3rem 0 0 4rem;
+
+        background-color: yellow;
+        border-radius: 12px;
+
+        border: 0;
+
+        padding: 1rem 2rem;
+
+        font-size: 2rem;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: bold;
+
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
+
+
+@media (max-width: 500px)  {
+    .container {
+        background-image: url('/public/BetVIP_Mobile.png');
+
+
+        margin-left: 2.5rem;
+        margin-top: 7.4rem;
+
+
+        .title-container {
+            .title{
+                font-size: 3.5rem;
+            }
+        }
+
+        .game-container{
+            .shields{
+                width: 18rem;
+            }
+
+            .teams{
+                font-size: 2rem;
+                line-height: 2rem;
+                text-transform: uppercase;
+                font-weight: normal;
+
+                margin-left: 0.5rem;
+
+                span {
+                    color: yellow;
+                }
+
+                .game-date{
+                    font-size: 1.4rem;
+                    line-height: 1.5rem;
+                    font-family: "Montserrat", sans-serif;
+                }
+
+            }
+
+        }
+
+        .odd-containers{
+            width: 80vw;
+            margin-left: 1rem;
+            display: flex;
+            /* background-color: burlywood; */
+            flex-direction: rows;
+            justify-content: space-evenly;
+
+            margin-top: 1.2rem;
+            font-size: 3rem;
+        }
+
+        .send-button{
+            width: 50vw;
+            text-transform: uppercase;
+            margin: 3rem 0 0 5rem;
+
+            background-color: yellow;
+            border-radius: 12px;
+
+            border: 0;
+
+            padding: 0.5rem 2rem;
+
+            font-size: 2rem;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: bold;
+
+            a{
+                text-decoration: none;
+                color: #000;
+            }
+        }
+
+    }
+
+}
